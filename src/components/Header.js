@@ -6,6 +6,7 @@ const HeaderWrap = styled.div`
     max-width: 1296px;
     margin: 0 auto;
     line-height: 80px;
+    padding-left: 20px;
 .news-img{
   display: flex;
   align-items: center;
