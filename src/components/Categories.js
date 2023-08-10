@@ -34,35 +34,41 @@ const categoriesArr = [
 
 
 
-const CategoriesBlock = styled.div`
+const CategoriesBlock = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
-  width: 768px;
+  max-width: 1296px;
   margin:0 auto;
-  @media screen and (max-width: 768px) {
-    width:100%;
-    overflow-x: auto;
-  }
+  list-style:none;
+
+    li{
+      display: inline-block;
+      margin: 10px 12px 0 0;
+      @media screen and (max-width: 768px) {
+        display: flex;
+      }
+    }
 `;
 
 const Category = styled(NavLink)`
-  font-size: 1.2rem;
+  display: block;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 43px;
+  letter-spacing: -.5px;
+  background-color: #eee;
   cursor: pointer;
-  white-space: pre;
   text-decoration: none;
   color: inherit;
-  padding-bottom: 0.25rem;
-  &:hover{
-    color: blue;
-  }
+
 
   &.active{
-    font-weight: 600;
-      border-bottom: 2px solid blue;
-      color: blue;
-      &:hover{
-        color: blue;
-      }
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
   }
 
   & + &{
@@ -74,12 +80,14 @@ const Categories = () =>{
   return(
       <CategoriesBlock>
         {categoriesArr.map(c =>(
-          <Category 
-            key={c.name}
-            className={({isActive})=>(isActive ? 'active' : undefined)}
-            to={c.name === 'all' ? '/' : `/${c.name}`}
-            >{c.text}
-          </Category>
+          <li>
+            <Category 
+              key={c.name}
+              className={({isActive})=>(isActive ? 'active' : undefined)}
+              to={c.name === 'all' ? '/' : `/${c.name}`}
+              >{c.text}
+            </Category>
+          </li>
         ))}
       </CategoriesBlock>
   )
