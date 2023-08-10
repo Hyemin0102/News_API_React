@@ -20,7 +20,7 @@ const usePromise = (promiseCreator, deps) => {
     process();
   },deps);
 
-  return [loading,resolved,error ];
+  return [loading,resolved,error];
 };
 
 export default usePromise; 

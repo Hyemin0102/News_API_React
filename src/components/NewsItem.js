@@ -90,19 +90,18 @@ const NewsItem = ({article, category}) =>{ //NewsList에서 props로 article 받
     <NewsItemBlock>
       <div className="newsitem-inner">
         <div class="category">
-          {/* <span className="img"><img src="./news_img.webp"/></span> */}
           <span className="txt">{category}</span>
         </div>
         {urlToImage && (
           <div className="thumbnail">
-            <a href={url} target="_blank" rel="noopener noreferer">
+            <a href={url} target="_blank" rel="noopener noreferrer">
               <img src={urlToImage} alt="thumbnail"/>
             </a>
           </div>
         )}
         <div className="contents">
           <h3>
-            <a href={url} target="_blank" rel="noopener noreferer">
+            <a href={url} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
           </h3>

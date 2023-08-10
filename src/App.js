@@ -1,8 +1,4 @@
-import { useCallback, useState } from 'react';
 import './App.css';
-import axios from '../node_modules/axios/index';
-import NewsList from './components/NewsList';
-import Categories from './components/Categories';
 import NewsPage from './pages/NewsPage';
 import {Routes,Route} from 'react-router-dom';
 
