@@ -52,7 +52,7 @@ margin-bottom:30px;
 
   }
   .thumbnail{
-  margin: 0 auto 16px;
+  margin: 0 auto 16px 0;
   max-width:400px;
   img{
     display: block;

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import {NavLink} from 'react-router-dom';
 
 const categoriesArr = [
@@ -92,5 +92,4 @@ const Categories = () =>{
       </CategoriesBlock>
   )
 };
-
 export default Categories;

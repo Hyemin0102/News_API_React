@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import NewsItem from "./NewsItem";
-import { useEffect, useRef, useState } from "react";
 import axios from 'axios';
 import usePromise from "../lib/usePromise";
 
@@ -53,5 +52,4 @@ const NewsList = ({category}) =>{
     </NewsListBlock>
   )
 };
-
 export default NewsList;

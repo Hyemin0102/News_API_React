@@ -26,7 +26,7 @@ const Header = () =>{
     <HeaderWrap>
       <div className="header-inner">
         <div className="news-img">
-          <img src="news_img.webp"/>
+          <img src="news_img.webp" alt="newsLogo"/>
           <strong>뉴스</strong>
         </div>
       </div>
