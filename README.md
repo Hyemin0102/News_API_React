@@ -1,6 +1,7 @@
 <div align="center">
   <img src="https://github.com/Hyemin0102/News_API_React/assets/128768462/f9b7aebd-ba35-48b2-87a0-cee3ef798dbf" width="80%"/>
 </div>
+
 # News_API
 실시간 뉴스 데이터를 제공하는 외부 API를 연동한 뉴스 웹사이트입니다. 
 
